@@ -82,6 +82,48 @@ Response structure is documented in [api.md](api.md) “Clean state — GetWorkS
 
 ⚠️ `cleaning` + `paused=1` means paused, **not completed**.
 
+**stationSt**
+
+Some models return  cleanSt / chargeSt.
+
+Deebot x5pro examples
+
+~~~
+curl -X POST "https://open.ecovacs.cn/robot/skill/ctl" -H "Content-Type: application/json" -d '{
+  "ak": "FOcadaKSxfWGsZ65bsDeGlXjc4bASLko",
+  "nickName": "DEEBOTX5PRO",
+  "ctl": {
+    "cmd": "GetWorkState"
+  }
+}' | python -m json.tool
+
+~~~
+
+output
+~~~
+{
+    "msg": "OK",
+    "code": 0,
+    "data": {
+        "code": 0,
+        "msg": "success",
+        "data": {
+            "ctl": {
+                "data": {
+                    "ret": "ok",
+                    "cleanSt": "h",
+                    "chargeSt": "charging",
+                    "stationSt": "i"
+                }
+            }
+        }
+    }
+}
+
+~~~
+
+
+
 **trigger (completion interpretation)**
 
 | trigger | Meaning | Conclusion |
