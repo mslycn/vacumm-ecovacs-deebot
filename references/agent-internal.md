@@ -122,6 +122,19 @@ output
 
 ~~~
 
+stationSt
+
+| Code | Full State | Description                |
+| ---- | ---------- | -------------------------- |
+| `i`  | idle       | Station is idle            |
+| `w`  | washing    | Washing the mop            |
+| `d`  | drying     | Drying the mop             |
+| `e`  | emptying   | Emptying dustbin           |
+| `g`  | goCharging | Returning to charging dock |
+| `c`  | charging   | Charging                   |
+| `p`  | pause      | Paused                     |
+
+
 
 
 **trigger (completion interpretation)**
