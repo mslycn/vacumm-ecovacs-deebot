@@ -31,6 +31,18 @@ curl -sS -X POST "${BASE_URL}/robot/skill/ctl" -H 'Content-Type: application/jso
   -d "{\"ak\":\"${AK}\",\"nickName\":\"device nick or name fragment\",\"ctl\":{\"cmd\":\"Clean\",\"data\":{\"act\":\"s\",\"type\":\"spotarea\",\"workMode\":0,\"aid\":[\"<mssid1>\",\"<mssid2>\"]}}}"
 ```
 
+```
+Samples
+
+AK="FOcadaKSxfWGsZ65bsDeGl"
+NAME="DEEBOTX5PRO"
+
+curl -sS -X POST "https://open.ecovacs.cn/robot/skill/ctl" \
+  -H "Content-Type: application/json" \
+  -d "{\"ak\":\"$AK\",\"nickName\":\"$NAME\",\"ctl\":{\"cmd\":\"GetAreaList\",\"data\":{}}}" \
+  | python -m json.tool
+```
+
 ---
 
 ## Protocol quick reference (ctl.cmd / ctl.data)
