@@ -1,5 +1,11 @@
 # Ecovacs API
 
+Call the gateway via HTTP
+
+## Three-step flow
+
+Configure AK → 2. List devices → 3. Send commands
+
 step 1. get AK (Access Key)
 
 Mainland China: https://open.ecovacs.cn/
