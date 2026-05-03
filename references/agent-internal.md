@@ -30,10 +30,9 @@ curl -sS -X POST "${BASE_URL}/robot/skill/ctl" -H 'Content-Type: application/jso
 curl -sS -X POST "${BASE_URL}/robot/skill/ctl" -H 'Content-Type: application/json' \
   -d "{\"ak\":\"${AK}\",\"nickName\":\"device nick or name fragment\",\"ctl\":{\"cmd\":\"Clean\",\"data\":{\"act\":\"s\",\"type\":\"spotarea\",\"workMode\":0,\"aid\":[\"<mssid1>\",\"<mssid2>\"]}}}"
 ```
-
-```
 Samples
 
+```
 AK="FOcadaKSxfWGsZ65bsDeGl"
 NAME="DEEBOTX5PRO"
 
