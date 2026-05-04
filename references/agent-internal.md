@@ -124,17 +124,34 @@ output
 
 ~~~
 
+cleanSt
+
+
+| Code  | Full State | Description                |
+| ---- | ---------- | -------------------------- |
+| `s` | start cleaning  |      |
+| `p` | pause |    |
+| `r` | resume | |
+| `h` | stop  |  |
+| `wash`  | Washing       | Washing the mop             |
+
+chargeSt
+
+| Code | Full State | Description                |
+| ---- | ---------- | -------------------------- |
+| `i`  | idle       | Station is idle            |
+| `charging`  | charging     |             |
+
+
+
 stationSt
 
 | Code | Full State | Description                |
 | ---- | ---------- | -------------------------- |
 | `i`  | idle       | Station is idle            |
-| `w`  | washing    | Washing the mop            |
-| `d`  | drying     | Drying the mop             |
-| `e`  | emptying   | Emptying dustbin           |
-| `g`  | goCharging | Returning to charging dock |
-| `c`  | charging   | Charging                   |
-| `p`  | pause      | Paused                     |
+| `dry`  | drying     | Drying the mop             |
+| `dust`  | emptying   | Emptying dustbin           |
+
 
 
 Firmware differences exist
