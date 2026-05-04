@@ -82,7 +82,9 @@ Response structure is documented in [api.md](api.md) “Clean state — GetWorkS
 
 ⚠️ `cleaning` + `paused=1` means paused, **not completed**.
 
-**stationSt**
+---
+
+**stationSt**    add by mslycn
 
 Some models return  cleanSt / chargeSt.
 
@@ -135,7 +137,11 @@ stationSt
 | `p`  | pause      | Paused                     |
 
 
+Firmware differences exist
 
+Same code may behave slightly differently across models (X1 / X2 / T20 / N8 etc.)
+
+---
 
 **trigger (completion interpretation)**
 
