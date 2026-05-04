@@ -10,7 +10,10 @@ step 1. get AK (Access Key)
 
 Mainland China: https://open.ecovacs.cn/
 
+or
+
 International: https://open.ecovacs.com/
+
 
 
 
