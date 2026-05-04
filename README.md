@@ -8,6 +8,8 @@ Configure AK → 2. List devices → 3. Send commands
 
 step 1. get AK (Access Key)
 
+Open the Ecovacs Open Platform in a browser and get the AK.
+
 Mainland China: https://open.ecovacs.cn/
 
 or
