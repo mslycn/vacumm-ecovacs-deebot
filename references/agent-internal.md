@@ -42,6 +42,74 @@ curl -sS -X POST "https://open.ecovacs.cn/robot/skill/ctl" \
   | python -m json.tool
 ```
 
+output
+
+```
+{
+    "msg": "OK",
+    "code": 0,
+    "data": {
+        "code": 0,
+        "msg": "success",
+        "data": {
+            "ctl": {
+                "data": {
+                    "ret": "ok",
+                    "list": [
+                        {
+                            "subType": "6",
+                            "mssid": "2",
+                            "name": "\u5ba2\u5385\u536b\u751f\u95f4"
+                        },
+                        {
+                            "subType": "6",
+                            "mssid": "3",
+                            "name": "\u4e3b\u5367\u536b\u751f\u95f4"
+                        },
+                        {
+                            "subType": "13",
+                            "mssid": "4",
+                            "name": "\u9633\u53f0"
+                        },
+                        {
+                            "subType": "5",
+                            "mssid": "5",
+                            "name": "\u53a8\u623f"
+                        },
+                        {
+                            "subType": "0",
+                            "mssid": "6",
+                            "name": "\u5ba2\u4eba\u623f"
+                        },
+                        {
+                            "subType": "10",
+                            "mssid": "7",
+                            "name": "\u513f\u7ae5\u623f"
+                        },
+                        {
+                            "subType": "3",
+                            "mssid": "8",
+                            "name": "\u5367\u5ba4"
+                        },
+                        {
+                            "subType": "1",
+                            "mssid": "9",
+                            "name": "\u5ba2\u5385"
+                        },
+                        {
+                            "subType": "4",
+                            "mssid": "10",
+                            "name": "\u4e66\u623f"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
+
+```
+
 ---
 
 ## Protocol quick reference (ctl.cmd / ctl.data)
