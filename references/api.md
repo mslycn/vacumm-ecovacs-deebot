@@ -2,7 +2,7 @@
 
 **Entry point**: For quick start, see [SKILL.md](../SKILL.md) in the parent directory. This document is for looking up gateway request bodies, fields, and enums. For more complete implementation strategy and state interpretation logic, see [agent-internal.md](agent-internal.md) (internal reference).
 
-## Authentication (AK)
+## Step 1.Authentication (AK)
 
 **The Access Key (AK) must be created/viewed by the user on the Ecovacs Open Platform “Service Overview” page, and provided by the user to the integrator (CN `https://open.ecovacs.cn/`, Intl `https://open.ecovacs.com/`). Users do not need to care about baseurl—just use the platform for their region.**
 
@@ -10,11 +10,15 @@ This skill package no longer uses username/password or client-side login (e.g. I
 
 ---
 
-## Gateway integration (recommended)
+## Step 2.Gateway integration (recommended)
 
-Let `BASE_URL` be the gateway deployment root. By default it matches the Open Platform domain (CN `https://open.ecovacs.cn`, Intl `https://open.ecovacs.com`). If you use a self-hosted/local gateway, override with the `ECOVACS_PORTAL_URL` environment variable.
+Let `BASE_URL` be the gateway deployment root. 
 
-### Device list (GET, redacted externally)
+- By default it matches the Open Platform domain (CN `https://open.ecovacs.cn`, Intl `https://open.ecovacs.com`). 
+
+- If you use a self-hosted/local gateway, override with the `ECOVACS_PORTAL_URL` environment variable.
+
+### Step 2.1 Device list (GET, redacted externally)
 
 Recommended **GET**:
 
@@ -38,7 +42,7 @@ Each entry in `data` does **not** include `did`, `class`, or `resource` (the gat
 
 You can also `POST ${BASE_URL}/robot/skill/deviceList` with `Content-Type: application/json` and body `{"ak":"<AK>"}`. Semantics are the same as GET.
 
-### Control (CloudCtl)
+### Step 2.2  Control (CloudCtl)
 
 - `POST ${BASE_URL}/robot/skill/ctl`
 - `Content-Type: application/json`
@@ -56,7 +60,7 @@ You can also `POST ${BASE_URL}/robot/skill/deviceList` with `Content-Type: appli
 
 If `nickName` is provided, the server matches a device and fills the cloud-control parameters before sending. In the “Protocol quick reference” below, `cmdName` / `body.data` correspond to `ctl.cmd` / `ctl.data`.
 
-### Send examples (curl)
+#### Send examples (curl)
 
 ```bash
 export BASE_URL="https://open.ecovacs.cn"   # CN example; use https://open.ecovacs.com for Intl
