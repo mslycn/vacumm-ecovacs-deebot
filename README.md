@@ -29,7 +29,7 @@ Ecovacs data from vacuum.py: {'cleanSt': 'wash', 'chargeSt': 'charging', 'statio
 
 ~~~
 
-~~~
+
 
 cleanSt
 
