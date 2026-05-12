@@ -29,6 +29,39 @@ Ecovacs data from vacuum.py: {'cleanSt': 'wash', 'chargeSt': 'charging', 'statio
 
 ~~~
 
+~~~
+
+cleanSt
+
+
+| Code  | Full State | Description                |
+| ---- | ---------- | -------------------------- |
+| `s` | start cleaning  |    （ok）   |
+| `p` | pause |   （ok）  |
+| `r` | resume | |
+| `h` | stop  | （ok）  |
+| `wash`  | Washing       | Washing the mop  （ok）            |
+| `washpause`  | washpause       | washpause the mop   （ok）           |
+
+chargeSt
+
+| Code | Full State | Description                |
+| ---- | ---------- | -------------------------- |
+| `i`  | idle       | Station is idle  （ok）          |
+| `g`  |  go charging     |         ok    |
+| `charging`  | charging     |     ok        |
+
+
+
+stationSt
+
+| Code | Full State | Description                |
+| ---- | ---------- | -------------------------- |
+| `i`  | idle       | Station is idle            |
+| `dry`  | drying     | Drying the mop             |
+| `dust`  | emptying   | Emptying dustbin           |
+
+
 
 doc:
 
