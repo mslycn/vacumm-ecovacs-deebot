@@ -18,6 +18,7 @@ International: https://open.ecovacs.com/
 
 
 
+### Ecovacs data examples for deebot x5 pro
 
 ~~~
 Ecovacs data from vacuum.py: {'cleanSt': 'h', 'chargeSt': 'g', 'stationSt': 'i'}
