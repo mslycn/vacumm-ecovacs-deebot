@@ -30,4 +30,6 @@ Ecovacs data from vacuum.py: {'cleanSt': 'wash', 'chargeSt': 'charging', 'statio
 ~~~
 
 
+doc:
+
 https://open.ecovacs.com/#/skill/plaza/ecovacs-robot-control-en
