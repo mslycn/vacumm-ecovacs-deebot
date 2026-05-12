@@ -48,7 +48,7 @@ chargeSt
 | Code | Full State | Description                |
 | ---- | ---------- | -------------------------- |
 | `i`  | idle       | Station is idle  （ok）          |
-| `g`  |  go charging     |         ok    |
+| `g`  |  go charging     |  return-to-charge       ok    |
 | `charging`  | charging     |     ok        |
 
 
