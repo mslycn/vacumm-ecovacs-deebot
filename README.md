@@ -57,9 +57,10 @@ stationSt
 
 | Code | Full State | Description                |
 | ---- | ---------- | -------------------------- |
-| `i`  | idle       | Station is idle            |
-| `dry`  | drying     | Drying the mop             |
-| `dust`  | emptying   | Emptying dustbin           |
+| `i`  | idle       | Station is idle    （ok）        |
+| `dry`  | drying     | Drying the mop      （ok）       |
+| `dust`  | emptying   | Emptying dustbin     （ok）      |
+| `dustpause`  | emptying   | Emptying dustbin  （ok）         |
 
 
 
