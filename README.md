@@ -37,9 +37,9 @@ cleanSt
 | Code  | Full State | Description                |
 | ---- | ---------- | -------------------------- |
 | `s` | start cleaning  |    （ok）   |
-| `p` | pause |  Paused （ok）  |
+| `p` | pause | pause cleaning（ok）  |
 | `r` | resume | |
-| `h` | stop  | On dock（ok）  |
+| `h` | stop  | （ok）  |
 | `wash`  | Washing       | Washing the mop  （ok）            |
 | `washpause`  | washpause       | washpause the mop   （ok）           |
 
@@ -50,6 +50,8 @@ chargeSt
 | `i`  | idle       | Not charging  （ok）          |
 | `g`  |  go charging     |  return-to-charge       ok    |
 | `charging`  | charging     | charging On dock    ok        |
+| `gp`  |      |        |
+
 
 
 
