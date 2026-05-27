@@ -43,6 +43,18 @@ cleanSt
 | `wash`  | Washing       | Washing the mop  （ok）            |
 | `washpause`  | washpause       | washpause the mop   （ok）           |
 
+Note
+
+清扫状态，请求成功时存在。s-清扫中，p-暂停中，h-空闲中，goposition-正在前往指定位置，gopositionpause-在指定点停止，findpet-寻找宠物，findpetpause-寻找宠物暂停，cruise-巡航中，cruisepause-巡航暂停，buildmap-创建地图，buildmappause-建图暂停
+
+控制
+~~~
+"s":开始清扫
+"r":恢复清扫
+"p":暂停清扫
+"h":停止清扫
+~~~
+
 chargeSt
 
 | Code | Full State | Description                |
@@ -52,7 +64,15 @@ chargeSt
 | `charging`  | charging     | charging On dock    ok        |
 | `gp`  |      |        |
 
+Note
 
+充电状态，请求成功时存在。g-正在回充，gp-回充暂停，i-空闲，sc-底座充电，wc-线充，charging-充电中（包括SC和WC）
+
+控制回充
+~~~
+"go-start":开始回充
+"stopGo":结束回充
+~~~
 
 
 stationSt
@@ -64,6 +84,9 @@ stationSt
 | `dust`  | emptying   | Emptying dustbin     （ok）      |
 | `dustpause`  | emptying   | Emptying dustbin  （ok）         |
 
+Note
+
+基站状态，i-空闲，wash-正在清洗拖布，dry-正在烘干，drypause-烘干暂停，dust-集尘中，dustpause-集尘暂停，clean-基站清洁，cleanpause-基站清洁暂停，wash-清洗拖布，washpause-清洗拖布暂停
 
 
 doc:
